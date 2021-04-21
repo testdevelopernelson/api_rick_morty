@@ -38,7 +38,7 @@
     </script>
     <link type="text/css" rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}" />  
     <link type="text/css" rel="stylesheet" href="{{ asset('css/estilos.css?v=4') }}" />  
-    <link type="text/css" rel="stylesheet" href="{{ asset('css/my_styles.css?v=4') }}" />   
+    <link type="text/css" rel="stylesheet" href="css/my_styles.css?v=4"/>   
     <link type="text/css" rel="stylesheet" href="{{ asset('css/shop_style.css') }}" />   
     <link type="text/css" rel="stylesheet" href="{{ asset('css/sweet_alert.css') }}" />  
     <link type="text/css" rel="stylesheet" href="{{ asset('css/slick.css') }}" />  
