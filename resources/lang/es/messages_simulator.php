@@ -1,0 +1,27 @@
+<?php
+   return array (
+	   	'select_product' => 'Seleccione el producto',
+	   	'enter_capital' => 'Ingrese el capital a invertir',
+	   	'enter_monthly_fee' => 'Ingrese la cuota mensual',
+	   	'select_period' => 'Seleccione el período',
+	   	'select_term' => 'Seleccione el plazo',
+	   	'contact_asesor' => 'Para contactar un asesor debe realizar la simulacón',
+	   	'fee_min_mi_plan' => 'La cuota mensual mínima para Mi Plan debe ser de ',
+	   	'fee_max_mi_plan' => 'La cuota mensual máxima para Mi Plan debe ser de ',
+	  	'capital_min_mi_plan' => 'El capital mínimo para el CDT debe ser de ',
+	   	'capital_max_mi_plan' => 'El capital máximo para el CDT debe ser de ',
+	   	'parameters_not_found' => 'No es posible realizar la simulación con los parámetros entregados',
+	   	'parameters_not_found_credit' => 'No es posible simular un crédito con los parámetros ingresados',
+	   	'term_not_found' => 'El plazo no puede ser calculado con los valores ingresados.',
+	   	'fee_term_not_found' => 'No es posible simular un crédito con los parámetros ingresados, verifique la cuota y el plazo',
+
+	   	'select_type_credit' => 'Seleccione el tipo de crédito',
+	   	'select_warranty' => 'Seleccione el tipo de garantía',
+	   	'select_agency' => 'Seleccione la agencia',
+	   	'select_ocupation' => 'Seleccione la ocupación',
+	   	'select_way_to_pay' => 'Seleccione la forma de pago',
+	   	'select_variable_calculate' => 'Seleccione la variable a calcular',
+	   	'enter_value_credit' => 'Ingrese el valor del crédito',
+	   	'enter_monthly_fee' => 'Ingrese la cuota mensual',
+	   	'select_term' => 'Seleccione el plazo',
+);

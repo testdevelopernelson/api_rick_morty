@@ -1,0 +1,30 @@
+<?php
+return array (
+  'saving_simulator' => 'Simulador de Ahorro',
+  'product' => 'Producto',
+  'select_product' => 'Seleccione el producto',
+  'monthly_fee' => 'Cuota mensual',
+  'capital' => 'Capital',
+  'period' => 'Período pago de intereses',
+  'select_period' => 'Seleccionar',
+  'term' => 'Plazo en meses',
+  'select_term' => 'Seleccionar',
+  'effective_rate' => 'Tasa E.A',
+  'nominal_rate' => 'Tasa nominal',
+  'value_interest' => 'Valor de intereses',
+  'retefuente' => 'Retención en la fuente',
+  'net_interest' => 'Intereses netos',
+  'number_fee' => 'Número de cuotas',
+  'capital_reached' => 'Capital alcanzado',
+  'interest_generated' => 'Intereses generados',
+  'date_expiration' => 'Fecha de vencimiento',
+  'projection' => 'Proyección',
+  'month' => 'Mes',
+  'capital' => 'Capital',
+  'accumulated' => 'Acumulado',
+  'interest' => 'Interés',
+  'retefuente' => 'Retefuente',
+  'interest_total' => 'Total intereses',
+  
+
+);
