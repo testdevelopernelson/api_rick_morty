@@ -14,10 +14,8 @@ class CustomerLoginController extends Controller{
 	 	public function login() {
         $credentials = request()->all();
         if (Auth::attempt($credentials)) {
-        	$user = Auth::user();
-          $user->assignRole('Guest');
-        	event(new UpdateLastLogin($user));
-          return response()->json(['status' => true]);
+      	 	$user = User::where('id', auth()->id())->with('favorites')->first();
+          return response()->json(['status' => true, 'user' => $user]);
         }
         return response()->json(['status' => false, 'message' => 'Correo y/o contraseña incorrectos'], 422);
     }

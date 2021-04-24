@@ -50,6 +50,10 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+        if (request()->url() != route('home')) {
+           return redirect()->route('home');
+        }
+        
         return parent::render($request, $exception);
     }
 }

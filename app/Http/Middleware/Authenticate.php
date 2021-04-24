@@ -19,13 +19,7 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     {
         if (!$request->expectsJson()) {
-            return route('login');
-        }
-
-        if(Auth::check()){ 
-            if(Auth::user()->change_password && request()->route()->getName() != 'account.change_password'){
-                return redirect()->route('account.change_password');
-            }
+            return route('home');
         }
 
 

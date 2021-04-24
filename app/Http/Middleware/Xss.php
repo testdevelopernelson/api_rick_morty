@@ -18,11 +18,10 @@ class Xss
     {   
         //Si tiene pendiente el cambio de contraseña
         // dd(Auth::check());//Valida si existe un usuario logueado
-        if(Auth::check()){
-            if(Auth::user()->change_password && request()->route()->getName() != 'account.change_password'){
-                return redirect()->route('account.change_password');
-            }
-        }
+        // dd(request()->url());
+       // if (request()->route()->getName() != 'home') {
+       //     return redirect()->route('home');
+       // }
         if (!in_array(strtolower($request->method()), ['put', 'post'])) {
             return $next($request);
         }

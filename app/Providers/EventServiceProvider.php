@@ -15,18 +15,7 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        \App\Events\UpdateLastLogin::class => [
-            \App\Listeners\UpdateLastLogin::class
-        ],
-        \App\Events\UserRegistered::class => [
-            \App\Listeners\UserRegistered::class
-        ], 
-        \App\Events\ChangeStatusDevolution::class => [
-            \App\Listeners\ChangeStatusDevolution::class,
-        ],
-         \Illuminate\Auth\Events\Logout::class => [
-            \App\Listeners\LogoutUser::class,
-        ],
+        
     ];
 
     /**

@@ -56,7 +56,6 @@ class Kernel extends HttpKernel
      */
     protected $routeMiddleware = [
         'auth' => \App\Http\Middleware\Authenticate::class,
-        'admin' => \App\Http\Middleware\Admin::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
@@ -71,8 +70,5 @@ class Kernel extends HttpKernel
         'localeSessionRedirect' => \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
         'localeCookieRedirect' => \Mcamara\LaravelLocalization\Middleware\LocaleCookieRedirect::class,
         'localeViewPath' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationViewPath::class,
-        'checkip' => \App\Http\Middleware\CheckIpAccess::class,
-        'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
-        'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class, 
     ];
 }
