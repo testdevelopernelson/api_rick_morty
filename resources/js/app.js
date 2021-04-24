@@ -25,7 +25,6 @@ Vue.use(IconsPlugin)
 
 import router from './routes'
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('app', require('./components/App.vue').default);
 
 /**
@@ -36,9 +35,7 @@ Vue.component('app', require('./components/App.vue').default);
 const store = new Vuex.Store({
 	state : {
 		user : {},
-		auth : false,
-		devolutions : {},
-		prueba : 0
+		auth : false
 	}, 
 	mutations : {
 

@@ -12,8 +12,4 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js');
-mix.webpackConfig({
-  resolve: {
-    modules: [path.resolve(__dirname, 'resources/assets/js/modules'), 'node_modules']
-  }
-})
+
