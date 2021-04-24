@@ -80,7 +80,13 @@
 		     	.then(response => {	 
 		     			this.btn_favorite = 'add';
               this.active_gif = false;
-              this.$store.state.user.favorites.splice(this.$store.state.user.favorites.indexOf({usuario_id : this.$store.state.user.id, ref_api : this.item.id}) , 1);
+              let self = this;
+              this.$store.state.user.favorites.forEach(function(value, index){
+		              if(value.ref_api == self.item.id){
+		                  self.$store.state.user.favorites.splice(index, 1);
+		                 	return false;
+		             	}
+           		});
               this.$bvToast.toast(response.data.message, {
 			          title: false,
 			          toaster: 'b-toaster-bottom-right',

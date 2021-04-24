@@ -8,7 +8,7 @@
     	 		</ul>
     	 	</div>
 	 	</div>
-    <div class="cols">
+    <div v-if="user.favorites.length > 0" class="cols">
       <h1 class="title">Mis favoritos</h1>
       <div class="items">
         <div class="item" v-for="item in list.results">
@@ -27,7 +27,7 @@
 		data(){
 			return{
 				user : {},
-			 	active_gif : true,
+			 	active_gif : false,
 				ref_api : [],
 				url_api : null,
 				list : {
@@ -38,17 +38,19 @@
 		},
 		mounted(){
 			this.user = this.$store.state.user;
-			console.log(this.user)
 			let self = this;
 		  this.user.favorites.forEach(function(item){        
 		 		self.ref_api.push(item.ref_api);
 		  });
 		  this.url_api = `https://rickandmortyapi.com/api/character/[${this.ref_api}]`;
-		  console.log(this.url_api)
-		  this.getListapi();
+		  if (this.user.favorites.length >  0) {		  	
+				this.active_gif = true
+		  	this.getListapi();
+		  }
+		  
 		},
 		methods:{
-			getListapi(){
+			getListapi(){;
 	      axios.get(this.url_api)
 		     	.then(response => {	 
               this.active_gif = false;
