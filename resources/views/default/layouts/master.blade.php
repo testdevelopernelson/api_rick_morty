@@ -17,8 +17,8 @@
       } 
 
     </style>
-    <link type="text/css" rel="stylesheet" href="{{ asset('css/estilos.css?v=4') }}" />  
-    <link type="text/css" rel="stylesheet" href="{{ asset('css/my_styles.css?v=4') }}" /> 
+    <link type="text/css" rel="stylesheet" href="css/estilos.css?v=4" />  
+    <link type="text/css" rel="stylesheet" href="css/my_styles.css?v=4" /> 
 
     @stack('css')
   </head>
@@ -28,8 +28,8 @@
     <div id="app"> 
         @yield('content') 
     </div>
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     @stack('js')
   </body>
 
